@@ -1,0 +1,67 @@
+/* Sidebar Styling */
+#sidebar-wrapper {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #343a40; /* Dark background */
+  color: #fff; /* White text */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.sidebar-heading {
+  padding: 1.5rem 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+  background-color: #007bff; /* Primary color */
+  border-bottom: 1px solid #6c757d; /* Light border for separation */
+}
+
+.list-group-item {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 1rem 1.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.list-group-item:hover,
+.list-group-item:focus,
+.list-group-item.active {
+  background-color: #007bff; /* Primary color on hover */
+  color: #fff;
+}
+
+.list-group-item-action {
+  cursor: pointer;
+}
+
+/* Page Content Styling */
+#page-content-wrapper {
+  margin-left: 250px; /* Margin to account for fixed sidebar */
+  width: calc(100% - 250px);
+  min-height: 100vh;
+  background-color: #f8f9fa; /* Light background */
+  padding: 2rem; /* Padding for content spacing */
+  transition: margin-left 0.3s ease, width 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #sidebar-wrapper {
+      width: 100%;
+      height: auto;
+      position: relative;
+  }
+
+  #page-content-wrapper {
+      margin-left: 0;
+      width: 100%;
+  }
+
+  .list-group-item {
+      padding: 1rem;
+  }
+}

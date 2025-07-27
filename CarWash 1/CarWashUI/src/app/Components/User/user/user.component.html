@@ -1,0 +1,20 @@
+<div class="d-flex" id="wrapper">
+  <!-- Sidebar -->
+  <div class="bg-dark text-white border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">MENU</div>
+      <div class="list-group list-group-flush">
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-white" routerLink="book-wash">Book a Wash</a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-white" routerLink="my-cars">My Cars</a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-white" routerLink="my-orders">My Orders</a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-white" routerLink="receipts">Receipts</a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-white" routerLink="my-reviews">Reviews & Ratings</a>
+      </div>
+  </div>
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+      <div class="container-fluid p-4">
+          <router-outlet></router-outlet>
+      </div>
+  </div> 
+</div>

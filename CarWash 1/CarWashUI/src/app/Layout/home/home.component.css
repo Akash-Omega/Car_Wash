@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e9ecef;
+}
+
+.car {
+  width: 90%;
+  max-width: 1100px;
+  height: auto;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+  ), url('../../../assets/images/Untitled-design-19.webp');
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .car {
+    text-align: center;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .car h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .car p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  .cta-button {
+    padding: 15px 30px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  padding: 4rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.car:hover {
+  transform: translateY(-10px);
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  color: #ff6347;
+}
+
+p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  max-width: 700px;
+}
+
+.cta-button {
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  background-color: #20c997;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+  background-color: #17a2b8;
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .car {
+      width: 95%;
+      padding: 2rem;
+  }
+
+  h1 {
+      font-size: 2rem;
+  }
+
+  p {
+      font-size: 1.1rem;
+  }
+
+  .cta-button {
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+  }
+}

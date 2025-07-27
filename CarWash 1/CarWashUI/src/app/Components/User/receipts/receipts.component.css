@@ -1,0 +1,72 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .table {
+    width: 100%;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .table th,
+  .table td {
+    padding: 15px;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
+  }
+  
+  .table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    background-color: #f1f1f1;
+  }
+  
+  .table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .table th {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .table td {
+    color: #666;
+  }
+  
+  .table .status {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .table .status.completed {
+    color: #28a745;
+  }
+  
+  .table .status.pending {
+    color: #ffc107;
+  }
+  
+  .table .status.failed {
+    color: #dc3545;
+  }
+  

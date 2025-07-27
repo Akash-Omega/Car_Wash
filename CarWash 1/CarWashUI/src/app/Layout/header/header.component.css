@@ -1,0 +1,82 @@
+/* Navbar Styling */
+#header {
+    background-color: #1a1a1a; /* Dark background for a modern look */
+}
+
+.navbar {
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #ff4081 !important; /* Accent color on hover */
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 1.1rem;
+    margin: 0 0.5rem;
+    color: #b0bec5; /* Light gray color for links */
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link.active,
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ff4081; /* Accent color on hover */
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    color: #b0bec5;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    color: #ff4081;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.name h4 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav .nav-item {
+        margin: 0.5rem 0;
+    }
+
+    .navbar-nav .nav-item .nav-link,
+    .logout-button {
+        font-size: 1rem;
+    }
+
+    .name h4 {
+        font-size: 1rem;
+    }
+}
